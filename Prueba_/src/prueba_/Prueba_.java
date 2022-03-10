@@ -20,7 +20,7 @@ public class Prueba_ {
         v[3] = 8;
         Prueba p = new Prueba();
         p.valor = 10;
-        p.mo(v);
+        p.modificar(v);
         p.bo(v);
         p.in(v);
     }

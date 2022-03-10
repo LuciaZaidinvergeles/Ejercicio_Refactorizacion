@@ -14,7 +14,7 @@ public class Prueba {
     public int valor;
 //metodo que modifica el contenido de la posicion p de un array con el valor pasado
 
-    public void mo(int[] vector) {
+    public void modificar(int[] vector) {
         int i;
         int posicion = 1;
 //Mostramos los elementos del array
