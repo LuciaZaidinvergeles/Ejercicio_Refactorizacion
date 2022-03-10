@@ -16,7 +16,7 @@ public class Prueba {
 
     public void mo(int[] v) {
         int i;
-        int p = 1;
+        int posicion = 1;
 //Mostramos los elementos del array
         System.out.print("v={");
         for (i = 0; i < v.length; i++) {
@@ -24,8 +24,8 @@ public class Prueba {
         }
         System.out.println("}");
 //Modificamos el array
-        if (p < v.length) {
-            ModificaElemento(v, p);
+        if (posicion < v.length) {
+            ModificaElemento(v, posicion);
         }
 //Mostramos los elementos del array
         System.out.print("v={");
