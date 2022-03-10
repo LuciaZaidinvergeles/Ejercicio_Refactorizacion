@@ -11,7 +11,7 @@ package prueba_;
  */
 public class Prueba {
 
-    public int va;
+    public int valor;
 //metodo que modifica el contenido de la posicion p de un array con el valor pasado
 
     public void mo(int[] v) {
@@ -87,16 +87,16 @@ public class Prueba {
     }
 
     void InsertaElemento(int i, int[] v, int p) {
-        System.out.println("Elemento a insertar=" + this.va);
+        System.out.println("Elemento a insertar=" + this.valor);
         for (i = v.length - 1; i > p; i--) {
             v[i] = v[i - 1];
         }
-        v[p] = this.va;
+        v[p] = this.valor;
     }
 
     void ModificaElemento(int[] v, int p) {
 //mostramos su contenido
         System.out.println("Elemento a modificar=" + v[p]);
-        v[p] = this.va;
+        v[p] = this.valor;
     }
 }
