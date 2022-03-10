@@ -21,7 +21,7 @@ public class Prueba_ {
         Prueba p = new Prueba();
         p.valor = 10;
         p.modificar(v);
-        p.bo(v);
+        p.borrar(v);
         p.in(v);
     }
 }
