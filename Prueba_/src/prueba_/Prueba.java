@@ -1,14 +1,6 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package prueba_;
 
-/**
- *
- * @author Lucia y Toñi
- */
 public class Prueba {
 
     public int valor;
@@ -36,67 +28,67 @@ public class Prueba {
     }
 //metodo que borra el elemento de la posicion p desplazando a la izquierda todos los elementos
 
-    public void borrar(int[] v) {
-        int p = 1, i;
+    public void borrar(int[] vector) {
+        int posicion = 1, i;
 //mostramos su contenido
 //Mostramos los elementos del array
         System.out.print("v={");
-        for (i = 0; i < v.length; i++) {
-            System.out.print(v[i] + ",");
+        for (i = 0; i < vector.length; i++) {
+            System.out.print(vector[i] + ",");
         }
         System.out.println("}");
 //Borramos el elemento
-        if (p < v.length) {
-            BorraElemento(v, p, i);
+        if (posicion < vector.length) {
+            BorraElemento(vector, posicion, i);
         }
 //Mostramos los elementos del array
         System.out.print("v={");
-        for (i = 0; i < v.length; i++) {
-            System.out.print(v[i] + ",");
+        for (i = 0; i < vector.length; i++) {
+            System.out.print(vector[i] + ",");
         }
         System.out.println("}");
     }
 //metodo que inserta un elemento en la posicion p desplazando a la derecha todos los elementos
 
-    public void in(int[] v) {
-        int p = 1, i;
+    public void insertar(int[] vector) {
+        int posicion = 1, i;
 //mostramos su contenido
 //Mostramos los elementos del array
         System.out.print("v={");
-        for (i = 0; i < v.length; i++) {
-            System.out.print(v[i] + ",");
+        for (i = 0; i < vector.length; i++) {
+            System.out.print(vector[i] + ",");
         }
         System.out.println("}");
 //Borramos el elemento
-        if (p < v.length) {
-            InsertaElemento(i, v, p);
+        if (posicion < vector.length) {
+            InsertaElemento(i, vector, posicion);
         }
 //Mostramos los elementos del array
         System.out.print("v={");
-        for (i = 0; i < v.length; i++) {
-            System.out.print(v[i] + ",");
+        for (i = 0; i < vector.length; i++) {
+            System.out.print(vector[i] + ",");
         }
         System.out.println("}");
     }
 
-    void BorraElemento(int[] v, int p, int i) {
-        System.out.println("Elemento a borrar=" + v[p]);
-        for (i = p; i < v.length - 1; i++) {
-            v[i] = v[i + 1];
+    void BorraElemento(int[] vector, int posicion, int i) {
+        System.out.println("Elemento a borrar=" + vector[posicion]);
+        for (i = posicion; i < vector.length - 1; i++) {
+            vector[i] = vector[i + 1];
         }
     }
 
-    void InsertaElemento(int i, int[] v, int p) {
+    void InsertaElemento(int i, int[] vector, int posicion) {
         System.out.println("Elemento a insertar=" + this.valor);
-        for (i = v.length - 1; i > p; i--) {
-            v[i] = v[i - 1];
+        for (i = vector.length - 1; i > posicion; i--) {
+            vector[i] = vector[i - 1];
         }
-        v[p] = this.valor;
+        vector[posicion] = this.valor;
     }
 
-    void ModificaElemento(int[] v, int p) {
+    void ModificaElemento(int[] vector, int posicion) {
 //mostramos su contenido
-        System.out.println("Elemento a modificar=" + v[p]);
-        v[p] = this.valor;
+        System.out.println("Elemento a modificar=" + vector[posicion]);
+        vector[posicion] = this.valor;
     }
 }

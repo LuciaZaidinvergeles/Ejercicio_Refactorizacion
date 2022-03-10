@@ -22,6 +22,6 @@ public class Prueba_ {
         p.valor = 10;
         p.modificar(v);
         p.borrar(v);
-        p.in(v);
+        p.insertar(v);
     }
 }
