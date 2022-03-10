@@ -14,23 +14,23 @@ public class Prueba {
     public int valor;
 //metodo que modifica el contenido de la posicion p de un array con el valor pasado
 
-    public void mo(int[] v) {
+    public void mo(int[] vector) {
         int i;
         int posicion = 1;
 //Mostramos los elementos del array
         System.out.print("v={");
-        for (i = 0; i < v.length; i++) {
-            System.out.print(v[i] + ",");
+        for (i = 0; i < vector.length; i++) {
+            System.out.print(vector[i] + ",");
         }
         System.out.println("}");
 //Modificamos el array
-        if (posicion < v.length) {
-            ModificaElemento(v, posicion);
+        if (posicion < vector.length) {
+            ModificaElemento(vector, posicion);
         }
 //Mostramos los elementos del array
         System.out.print("v={");
-        for (i = 0; i < v.length; i++) {
-            System.out.print(v[i] + ",");
+        for (i = 0; i < vector.length; i++) {
+            System.out.print(vector[i] + ",");
         }
         System.out.println("}");
     }
