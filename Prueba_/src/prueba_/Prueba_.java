@@ -14,7 +14,7 @@ public class Prueba_ {
         vector[1] = 4;
         vector[2] = 6;
         vector[3] = 8;
-        Prueba p = new Prueba();
+        CambiaLongitud p = new CambiaLongitud();
         p.setValor(10);
         p.modificar(vector, 0, 1);
         p.borrar(vector, 0, 1);

@@ -1,6 +1,6 @@
 package prueba_;
 
-public class Prueba {
+public class CambiaLongitud {
 
     /**
      * @return the valor
