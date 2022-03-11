@@ -8,20 +8,22 @@ public class Prueba {
     public void modificar(int[] vector) {
         int i;
         int posicion = 1;
+        int LongitudActual = 0;
+        int longitud = vector.length;
 //Mostramos los elementos del array
         System.out.print("v={");
-        for (i = 0; i < vector.length; i++) {
+        for (i = 0; i < longitud; i++) {
             System.out.print(vector[i] + ",");
         }
         System.out.println("}");
 //Modificamos el array
-        if (posicion < vector.length) {
+        if (posicion < longitud) {
             System.out.println("Elemento a modificar=" + vector[posicion]);
             vector[posicion] = this.valor;
         }
 //Mostramos los elementos del array
         System.out.print("v={");
-        for (i = 0; i < vector.length; i++) {
+        for (i = 0; i < longitud; i++) {
             System.out.print(vector[i] + ",");
         }
         System.out.println("}");
@@ -30,23 +32,25 @@ public class Prueba {
 
     public void borrar(int[] vector) {
         int posicion = 1, i;
+        int LongitudActual = 0;
+        int longitud = vector.length;
 //mostramos su contenido
 //Mostramos los elementos del array
         System.out.print("v={");
-        for (i = 0; i < vector.length; i++) {
+        for (i = 0; i < longitud; i++) {
             System.out.print(vector[i] + ",");
         }
         System.out.println("}");
 //Borramos el elemento
-        if (posicion < vector.length) {
+        if (posicion < longitud) {
             System.out.println("Elemento a borrar=" + vector[posicion]);
-            for (i = posicion; i < vector.length - 1; i++) {
+            for (i = posicion; i < longitud - 1; i++) {
                 vector[i] = vector[i + 1];
             }
         }
 //Mostramos los elementos del array
         System.out.print("v={");
-        for (i = 0; i < vector.length; i++) {
+        for (i = 0; i < longitud; i++) {
             System.out.print(vector[i] + ",");
         }
         System.out.println("}");
@@ -55,24 +59,26 @@ public class Prueba {
 
     public void insertar(int[] vector) {
         int posicion = 1, i;
+        int LongitudActual = 0;
+        int longitud = vector.length;
 //mostramos su contenido
 //Mostramos los elementos del array
         System.out.print("v={");
-        for (i = 0; i < vector.length; i++) {
+        for (i = 0; i < longitud; i++) {
             System.out.print(vector[i] + ",");
         }
         System.out.println("}");
 //Borramos el elemento
-        if (posicion < vector.length) {
+        if (posicion < longitud) {
             System.out.println("Elemento a insertar=" + this.valor);
-            for (i = vector.length - 1; i > posicion; i--) {
+            for (i = longitud - 1; i > posicion; i--) {
                 vector[i] = vector[i - 1];
             }
             vector[posicion] = this.valor;
         }
 //Mostramos los elementos del array
         System.out.print("v={");
-        for (i = 0; i < vector.length; i++) {
+        for (i = 0; i < longitud; i++) {
             System.out.print(vector[i] + ",");
         }
         System.out.println("}");
