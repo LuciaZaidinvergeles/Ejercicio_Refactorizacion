@@ -1,24 +1,18 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
 package prueba_;
 
-public class NoCambiaLongitud extends Valor {
-
+/**
+ *
+ * @author Lucia y Toñi
+ */
+public class Valor {
+    
     protected int valor;
     //metodo que modifica el contenido de la posicion p de un array con el valor pasado
-
-    /**
-     * @return the valor
-     */
-    public int getValor() {
-        return valor;
-    }
-
-    /**
-     * @param valor the valor to set
-     */
-    public void setValor(int valor) {
-        this.valor = valor;
-    }
-
 
     public void Visualizacion(int longitud, int[] vector) {
         //Mostramos los elementos del array
@@ -28,5 +22,5 @@ public class NoCambiaLongitud extends Valor {
         }
         System.out.println("}");
     }
-
-    }
+    
+}
