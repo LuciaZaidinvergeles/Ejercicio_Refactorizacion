@@ -5,23 +5,19 @@
  */
 package prueba_;
 
-/**
- *
- * @author Lucia y Toñi
- */
 public class Prueba_ {
 
     public static void main(String[] args) {
-// TODO code application logic here
-        int[] v = new int[5];
-        v[0] = 2;
-        v[1] = 4;
-        v[2] = 6;
-        v[3] = 8;
-        Prueba p = new Prueba();
-        p.valor = 10;
-        p.modificar(v);
-        p.borrar(v);
-        p.insertar(v);
+
+        int[] vector = new int[5];
+        vector[0] = 2;
+        vector[1] = 4;
+        vector[2] = 6;
+        vector[3] = 8;
+        Prueba posicion = new Prueba();
+        posicion.valor = 10;
+        posicion.modificar(vector);
+        posicion.borrar(vector);
+        posicion.insertar(vector);
     }
 }
