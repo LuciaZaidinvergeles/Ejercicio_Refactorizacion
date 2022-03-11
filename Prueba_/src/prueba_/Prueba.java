@@ -5,42 +5,23 @@ public class Prueba {
     public int valor;
 //metodo que modifica el contenido de la posicion p de un array con el valor pasado
 
-    public void modificar(int[] vector) {
+    public void modificar(int[] vector, int LongitudActual) {
         int i;
         int posicion = 1;
-        int LongitudActual = 0;
-        int longitud = vector.length;
-//Mostramos los elementos del array
-        System.out.print("v={");
-        for (i = 0; i < longitud; i++) {
-            System.out.print(vector[i] + ",");
-        }
-        System.out.println("}");
+        final int longitud = vector.length;
 //Modificamos el array
         if (posicion < longitud) {
             System.out.println("Elemento a modificar=" + vector[posicion]);
             vector[posicion] = this.valor;
         }
 //Mostramos los elementos del array
-        System.out.print("v={");
-        for (i = 0; i < longitud; i++) {
-            System.out.print(vector[i] + ",");
-        }
-        System.out.println("}");
+         Visualizacion(longitud, vector);
     }
 //metodo que borra el elemento de la posicion p desplazando a la izquierda todos los elementos
 
-    public void borrar(int[] vector) {
+    public void borrar(int[] vector, int LongitudActual) {
         int posicion = 1, i;
-        int LongitudActual = 0;
-        int longitud = vector.length;
-//mostramos su contenido
-//Mostramos los elementos del array
-        System.out.print("v={");
-        for (i = 0; i < longitud; i++) {
-            System.out.print(vector[i] + ",");
-        }
-        System.out.println("}");
+        final int longitud = vector.length;
 //Borramos el elemento
         if (posicion < longitud) {
             System.out.println("Elemento a borrar=" + vector[posicion]);
@@ -49,25 +30,13 @@ public class Prueba {
             }
         }
 //Mostramos los elementos del array
-        System.out.print("v={");
-        for (i = 0; i < longitud; i++) {
-            System.out.print(vector[i] + ",");
-        }
-        System.out.println("}");
+         Visualizacion(longitud, vector);
     }
 //metodo que inserta un elemento en la posicion p desplazando a la derecha todos los elementos
 
-    public void insertar(int[] vector) {
+    public void insertar(int[] vector, int LongitudActual) {
         int posicion = 1, i;
-        int LongitudActual = 0;
-        int longitud = vector.length;
-//mostramos su contenido
-//Mostramos los elementos del array
-        System.out.print("v={");
-        for (i = 0; i < longitud; i++) {
-            System.out.print(vector[i] + ",");
-        }
-        System.out.println("}");
+        final int longitud = vector.length;
 //Borramos el elemento
         if (posicion < longitud) {
             System.out.println("Elemento a insertar=" + this.valor);
@@ -76,11 +45,16 @@ public class Prueba {
             }
             vector[posicion] = this.valor;
         }
-//Mostramos los elementos del array
+        Visualizacion(longitud, vector);
+    }
+
+    public void Visualizacion(int longitud, int[] vector) {
+        //Mostramos los elementos del array
         System.out.print("v={");
-        for (i = 0; i < longitud; i++) {
+        for (int i = 0; i < vector.length; i++) {
             System.out.print(vector[i] + ",");
         }
         System.out.println("}");
     }
+
 }

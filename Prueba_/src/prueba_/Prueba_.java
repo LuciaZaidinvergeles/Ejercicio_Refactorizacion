@@ -14,10 +14,10 @@ public class Prueba_ {
         vector[1] = 4;
         vector[2] = 6;
         vector[3] = 8;
-        Prueba posicion = new Prueba();
-        posicion.valor = 10;
-        posicion.modificar(vector);
-        posicion.borrar(vector);
-        posicion.insertar(vector);
+        Prueba p = new Prueba();
+        p.valor = 10;
+        p.modificar(vector, 0);
+        p.borrar(vector, 0);
+        p.insertar(vector, 0);
     }
 }
