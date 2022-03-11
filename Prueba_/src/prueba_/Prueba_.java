@@ -16,8 +16,8 @@ public class Prueba_ {
         vector[3] = 8;
         Prueba p = new Prueba();
         p.valor = 10;
-        p.modificar(vector, 0);
-        p.borrar(vector, 0);
-        p.insertar(vector, 0);
+        p.modificar(vector, 0, 1);
+        p.borrar(vector, 0, 1);
+        p.insertar(vector, 0, 1);
     }
 }
